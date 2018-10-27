@@ -1,0 +1,53 @@
+
+SELECT * FROM studentdetails
+WHERE age < 30 AND
+city = 'Boston' AND
+"grad status" = 'graduated'
+ORDER BY id ASC;
+
+/*Below is for created the table*/
+
+
+INSERT INTO studentdetails VALUES (2, 'Shinya', 'Salem', '2018a', 'graduated', 9, 'Alston', 'NJ', 'Antali');
+
+INSERT INTO studentdetails VALUES(1, 'Carla', 'Jen', '2018b', 'NOT completed', 8, 'Anborg', 'NV', 'Otwan');
+
+DELETE FROM studentdetails
+WHERE city='Alston';
+
+INSERT INTO  studentdetails (id, last_name, first_name, cohort, "grad status", age, city, state, neighborhood) VALUES 
+(5, 'Sanders', 'Sarah', '2017a', 'graduated', 22, 'Boston', 'MA', 'JP'), 
+(11, 'Wehadababyitsaboy', 'Jamal', '2017b', 'graduated', 23, 'Boston', 'MA', 'Roxbury'),
+(13, 'Elizabeth', 'Queen', '2018a', 'graduated', 29, 'Boston', 'MA', 'Dorchester'),
+(17, 'Rainbow', 'Bob', '2018b', 'graduated', 27, 'Boston', 'MA', 'Dorchester'),
+(3, 'Cooper', 'Antonia', '2018a', 'graduated', 28, 'Arlington', 'TX', 'Antina'), 
+(4, 'Cooper', 'Antonia', '2018c', 'currently studying', 28, 'Arlington', 'TX', 'Antina'),
+(6, 'Cooper', 'Antonia', '2018a', 'graduated', 28, 'Arlington', 'TX', 'Antina'),
+(7, 'Cooper', 'Antonia', '2018a', 'graduated', 28, 'Arlington', 'TX', 'Antina'),
+(8, 'Cooper', 'Antonia', '2018a', 'graduated', 28, 'Arlington', 'TX', 'Antina'),
+(9, 'Cooper', 'Antonia', '2018a', 'graduated', 28, 'Arlington', 'TX', 'Antina'),
+(10, 'Cooper', 'Antonia', '2018c', 'currently studying', 17, 'Arlington', 'TX', 'Antina'),
+(12, 'Close', 'For', '2018a', 'graduated', 29, 'Arlington', 'TX', 'Antina'),
+(14, 'Angle', 'To', '2018c', 'currently studying', 28, 'Arlington', 'TX', 'Antina'),
+(15, 'Reorganize', 'Themselves', '2018a', 'graduated', 19, 'Arlington', 'TX', 'Antina'),
+(16, 'Climb', 'Up', '2018a', 'graduated', 39, 'Arlington', 'TX', 'Antina'),(17, 'Single', 'File', '2018a', 'graduated', 43, 'Arlington', 'TX', 'Antina'),
+(18, 'Union', 'Left', '2018a', 'graduated', 22, 'Arlington', 'TX', 'Antina'),
+(19, 'Upon', 'Wave', '2018a', 'graduated', 48, 'Lynn', 'WA', 'Antina'),
+(20, 'Rebel', 'The', '2018a', 'graduated', 8, 'Arlington', 'TX', 'Antina');
+
+
+
+
+/*INSERT INTO studentdetails */
+
+/*CREATE TABLE Studentdetails (
+id INT,
+first_name VARCHAR(20),
+last_name VARCHAR (200),
+cohort VARCHAR (10),
+"grad status" VARCHAR (20),
+age INT,
+city VARCHAR (30),
+state VARCHAR (3),
+neighborhood VARCHAR (30)
+);*/
